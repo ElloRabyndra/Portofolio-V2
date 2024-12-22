@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElloRabyndra - Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center py-2 z-10">
+      <div class="container w-full">
+        <div class="flex justify-between items-center relative lg:px-20">
+          <div class="px-4">
+            <a href="" class="block text-lg font-bold text-main py-4 lg:text-2xl hover:scale-105 transition duration-300">ElloRabyndra</a>
+          </div>
+          <div class="px-4">
+            <button id="nav-button" name="nav-button" type="button" class="block md:hidden">
+              <span class="nav-line transition duration-300 origin-top-left ease-in-out"></span>
+              <span class="nav-line transition duration-300 ease-in-out"></span>
+              <span class="nav-line transition duration-300 origin-top-left ease-in-out"></span>
+            </button>
+          <!-- Main Nav -->
+          <nav id="main-nav" class="font-medium text-xl text-secondary hidden md:flex">
+            <ul class="flex gap-12 *:after:content-[''] *:after:block *:after:border *:after:border-main *:after:scale-x-0 *:after:transition-all *:after:duration-300">
+              <li class="hover:after:scale-x-105 hover:text-main"><a href="#home">Home</a></li>
+              <li class="hover:after:scale-x-105 hover:text-main"><a href="#about">About</a></li>
+              <li class="hover:after:scale-x-105 hover:text-main"><a href="#skills">Skills</a></li>
+              <li class="hover:after:scale-x-105 hover:text-main"><a href="#project">Project</a></li>
+              <li class="hover:after:scale-x-105 hover:text-main"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Side Nav -->
+    <nav id="side-nav" class="fixed w-[75%] right-0 top-0 bottom-0 bg-white shadow-xl py-4 z-50 hidden">
+      <ul class="flex-col gap-2 text-secondary font-semibold">
+        <li class="justify-self-end px-8">
+          <button id="nav-close-button" name="nav-close-button" type="button" class="text-2xl font-normal">
+            <svg class="h-9 w-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#10b981" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </li>
+        <li class="border-b-2"><a class="block p-4 hover:text-main transition duration-300" href="#home">Home</a></li>
+        <li class="border-b-2"><a class="block p-4 hover:text-main transition duration-300" href="#about">About</a></li>
+        <li class="border-b-2"><a class="block p-4 hover:text-main transition duration-300" href="#skills">Skills</a></li>
+        <li class="border-b-2"><a class="block p-4 hover:text-main transition duration-300" href="#project">Project</a></li>
+        <li class="border-b-2"><a class="block p-4 hover:text-main transition duration-300" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Home Section -->
+    <section class="pt-24 pb-8 md:pt-36 md:pb-12" id="home">
+      <div class="container">
+        <div class="flex flex-wrap lg:px-20">
+          <div class="w-full px-4 mb-4 md:w-1/2">
+            <h1 class="text-main font-semibold text-2xl sm:text-3xl">
+              Hi There! I Am <span class="block font-bold text-secondary text-4xl mt-2 sm:text-5xl">Ello Rabyndra</span>
+            </h1>
+            <h2 class="text-secondary font-medium text-lg sm:mt-2 sm:text-xl">Informatics Engineer Student</h2>
+            <p class="text-secondary text-sm mt-2 sm:text-base">
+              I am a student at Sriwijaya University, majoring in Informatics
+              Engineering. I have a keen interest in web development and graphic
+              design.
+            </p>
+            <div class="flex mt-4 gap-3">
+              <a href="https://wa.me/6281364324016" target="_blank" class="bg-main font-medium text-white text-lg px-6 py-2 rounded-2xl hover:bg-emerald-600 transition duration-300 sm:text-xl">
+                Contact
+              </a>
+              <a href="asset/cv_ello.jpg" download="ElloRabyndra CV" class="bg-main font-medium text-white text-lg px-6 py-2 rounded-2xl hover:bg-emerald-600 transition duration-300 sm:text-xl">
+                Download CV
+              </a>
+            </div>
+          </div>
+          <div class="w-full px-8 md:w-1/2">
+            <figure class="bg-main rounded-l-full rounded-br-full mt-4 mx-auto overflow-hidden md:max-w-[400px]">
+              <img src="asset/ello.png" alt="ElloRabyndra" class="max-w-full">
+            </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section -->
+
+    <!-- About Section -->
+    <section class="pt-24 pb-16 md:pt-36" id="about">
+      <div class="container">
+        <div class="flex flex-wrap lg:px-20">
+          <div class="w-full px-4 mb-4 md:w-1/2">
+            <h3 class="text-main font-semibold text-xl lg:text-2xl">ABOUT ME</h3>
+            <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl">Get to Know Me !</h2>
+            <p class="text-secondary text-base mt-2 lg:text-lg">I have experience in Java and JavaScript programming languages and am currently focusing on web development. I excel in teamwork, communication, adaptability, problem-solving, and leadership.</p>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:px-24 md:py-9">
+            <h2 class="text-secondary font-bold text-2xl xl:text-3xl">Connect With Me</h2>
+            <div class="flex items-center gap-2 mt-3 text-3xl text-secondary md:gap-3 lg:text-4xl">
+              <a href="https://wa.me/6281364324016" target="_blank" class="bx bxl-whatsapp block border-2 rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+              <a href="https://www.linkedin.com/in/ello-rabyndra/" target="_blank" class="bx bxl-linkedin-square block border-2 rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+              <a href="https://www.instagram.com/ellorabyndra/" target="_blank" class="bx bxl-instagram-alt block border-2 rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+              <a href="https://www.youtube.com/channel/UC-xqwOfXH4Wptedi0OvI1ow" target="_blank" class="bx bxl-youtube block border-2 rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+              <a href="https://github.com/ElloRabyndra" target="_blank" class="bx bxl-github block border-2 rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+
+    <!-- Skills Section -->
+     <section class="pt-24 pb-24 bg-gray-100 shadow-sm" id="skills">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="w-full mx-auto mb-4 text-center text-secondary">
+            <h3 class="text-main font-bold text-2xl lg:text-3xl">SKILLS & EXPERIENCE</h3>
+            <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl">My Expertise</h2>
+            <p class="max-w-screen-sm mx-auto text-secondary text-base mt-2 lg:text-lg">I have solid experience and expertise in web development and graphic design, combining technical proficiency with creative insight to deliver impactful results.</p>
+          </div>
+          <div class="flex flex-wrap lg:px-20">
+            <div class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4 xl:w-1/2">
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/html.png" alt="HTML" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">HTML</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/css.png" alt="CSS" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">CSS</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/javascript.png" alt="Javascript" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">Javascript</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/tailwind.png" alt="Tailwind CSS" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">Tailwind</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/nodejs.png" alt="Node.js" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">Node.js</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/git.png" alt="Git" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">Git</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/java.png" alt="Java" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">Java</figcaption>
+              </div>
+              <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden">
+                <figure>
+                  <img src="asset/figma.png" alt="Figma" class="w-full">
+                </figure>
+                <figcaption class="text-center mt-1 text-secondary font-semibold">Figma</figcaption>
+              </div>
+            </div>
+            <div class="w-full mt-8 space-y-5 xl:w-1/2 xl:px-20">
+              <div class="w-full cursor-pointer">
+                <h3 class=" bg-main text-white px-4 py-1 rounded-2xl w-max hover:bg-emerald-600 transition duration-300 md:text-xl">Nov 2024 - Aug 2024</h3>
+                <h4 class="text-secondary text-lg font-semibold mt-1 px-1 md:text-xl">Google Developer Student Club Unsri</h4>
+                <p class="text-secondary px-1 md:text-lg">Member of Graphic Design Division</p>
+              </div>
+              <div class="w-full cursor-pointer">
+                <h3 class=" bg-main text-white px-4 py-1 rounded-2xl w-max hover:bg-emerald-600 transition duration-300 md:text-xl">Nov 2024 - Aug 2024</h3>
+                <h4 class="text-secondary text-lg font-semibold mt-1 px-1 md:text-xl">Himpunan Mahasiswa Informatika</h4>
+                <p class="text-secondary px-1 md:text-lg">Staff of Information Technology Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Skills Section -->
+
+    <!-- Project Section -->
+     <section class="pt-24 pb-24" id="project">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="w-full mx-auto mb-4 text-center text-secondary">
+            <h3 class="text-main font-bold text-2xl lg:text-3xl">PROJECT</h3>
+            <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl">My Recent Project</h2>
+            <p class="max-w-screen-sm mx-auto text-secondary text-base mt-2 lg:text-lg">My projects blend innovative functionality with engaging visuals, bringing creative ideas to life through code and design.</p>
+          </div>
+          <div class="w-full lg:px-20">
+            <div class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4">
+              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+                <figure class="overflow-hidden"><img src="asset/firstporto.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
+                <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/" target="_blank" class="block w-full underline-offset-4">Portofolio Website V1</a></h3>
+              </div>
+              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+                <figure class="overflow-hidden"><img src="asset/bukuku.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
+                <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/BukuKu-FrontEnd/" target="_blank" class="block w-full underline-offset-4">BukuKu</a></h3>
+              </div>
+              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+                <figure class="overflow-hidden"><img src="asset/Mangdamri.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
+                <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/MangDamri/" target="_blank" class="block w-full underline-offset-4">MangDamri</a></h3>
+              </div>
+              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+                <figure class="overflow-hidden"><img src="asset/randomColor.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
+                <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/RandomColor/" target="_blank" class="block w-full underline-offset-4">Random Color Picker</a></h3>
+              </div>
+              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+                <figure class="overflow-hidden"><img src="asset/48Gallery.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
+                <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/48Gallery/" target="_blank" class="block w-full underline-offset-4">48 Gallery</a></h3>
+              </div>
+              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+                <figure class="overflow-hidden"><img src="asset/pickUrCar.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
+                <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/PickCar/" target="_blank" class="block w-full underline-offset-4">Pick Ur Car!</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Project Section -->
+
+    <!-- Contact Section -->
+     <section class="pt-24 pb-28 bg-gray-100 shadow-sm" id="contact">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="w-full mx-auto mb-4 text-center text-secondary">
+            <h3 class="text-main font-bold text-2xl lg:text-3xl">Contact</h3>
+            <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl">Let’s Connect</h2>
+            <p class="max-w-screen-sm mx-auto text-secondary text-base mt-2 lg:text-lg">I’m always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out to me!</p>
+          </div>
+          <div class="w-full lg:px-20">
+            <form>
+              <div class="w-full px-4 space-y-6 md:w-2/3 md:mx-auto md:space-y-4">
+                <div>
+                  <label for="name" class="text-secondary has-[:focus]:text-main">Name
+                    <input autocomplete="off" placeholder="Your Name" type="text" id="name" class="w-full outline-none text-secondary p-2 mt-1 rounded-lg shadow-sm focus:ring-2 focus:ring-main">
+                  </label>
+                </div>
+                <div>
+                  <label for="email" class="text-secondary has-[:focus]:text-main">Email
+                    <input autocomplete="off" placeholder="Your Email" type="email" id="email" class="w-full outline-none text-secondary p-2 mt-1 rounded-lg shadow-sm focus:ring-2 focus:ring-main">
+                  </label>
+                </div>
+                <div>
+                  <label for="message" class="text-secondary has-[:focus]:text-main">Message
+                    <textarea autocomplete="off" placeholder="Your Message" id="message" class="w-full h-40 outline-none text-secondary p-2 mt-1 rounded-lg shadow-sm focus:ring-2 focus:ring-main" ></textarea>
+                  </label>
+                </div>
+                <button class="block mx-auto bg-main text-white px-4 py-3 rounded-2xl active:bg-emerald-600 transition duration-300 md:text-xl">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Contact Section -->
+
+    <!-- Footer -->
+     <footer>
+      <div class="w-full px-4 bg-main">
+          <div class="flex justify-center items-center gap-2 pt-4 pb-2 text-2xl text-main md:gap-3 lg:text-3xl">
+            <a href="https://wa.me/6281364324016" target="_blank" class="bx bxl-whatsapp block bg-white border-2 border-white rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+            <a href="https://www.linkedin.com/in/ello-rabyndra/" target="_blank" class="bx bxl-linkedin-square block bg-white border-2 border-white rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+            <a href="https://www.instagram.com/ellorabyndra/" target="_blank" class="bx bxl-instagram-alt block bg-white border-2 border-white rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+            <a href="https://www.youtube.com/channel/UC-xqwOfXH4Wptedi0OvI1ow" target="_blank" class="bx bxl-youtube block bg-white border-2 border-white rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+            <a href="https://github.com/ElloRabyndra" target="_blank" class="bx bxl-github block bg-white border-2 border-white rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
+          </div>
+          <div class="flex justify-center gap-3 md:text-xl text-white font-medium">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <p class="md:text-lg text-center pb-4 text-white font-bold">Create by ElloRabyndra</p>
+      </div>
+     </footer>
+    <!-- Footer -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
