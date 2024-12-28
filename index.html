@@ -60,7 +60,7 @@
     <section class="pt-24 pb-8 md:pt-36 md:pb-12" id="home">
       <div class="container">
         <div class="flex flex-wrap lg:px-20">
-          <div class="w-full px-4 mb-4 md:w-1/2">
+          <div class="w-full px-4 mb-4 md:w-1/2 animate-fade-in">
             <h1 class="text-main font-semibold text-2xl sm:text-3xl">
               Hi There! I Am <span class="block font-bold text-secondary text-4xl mt-2 sm:text-5xl">Ello Rabyndra</span>
             </h1>
@@ -79,7 +79,7 @@
               </a>
             </div>
           </div>
-          <div class="w-full px-8 md:w-1/2">
+          <div class="w-full px-8 md:w-1/2 animate-fade-in">
             <figure class="bg-main rounded-l-full rounded-br-full mt-4 mx-auto overflow-hidden md:max-w-[400px]">
               <img src="asset/ello.png" alt="ElloRabyndra" class="max-w-full">
             </figure>
@@ -203,30 +203,30 @@
           </div>
           <div class="w-full lg:px-20">
             <div class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4">
-              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+              <article class="group rounded-3xl border shadow overflow-hidden max-w-80">
                 <figure class="overflow-hidden"><img src="asset/firstporto.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/" target="_blank" class="block w-full underline-offset-4">Portofolio Website V1</a></h3>
-              </div>
-              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+              </article>
+              <article class="group rounded-3xl border shadow overflow-hidden max-w-80">
                 <figure class="overflow-hidden"><img src="asset/bukuku.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/BukuKu-FrontEnd/" target="_blank" class="block w-full underline-offset-4">BukuKu</a></h3>
-              </div>
-              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+              </article>
+              <article class="group rounded-3xl border shadow overflow-hidden max-w-80">
                 <figure class="overflow-hidden"><img src="asset/Mangdamri.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/MangDamri/" target="_blank" class="block w-full underline-offset-4">MangDamri</a></h3>
-              </div>
-              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+              </article>
+              <article class="group rounded-3xl border shadow overflow-hidden max-w-80">
                 <figure class="overflow-hidden"><img src="asset/randomColor.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/RandomColor/" target="_blank" class="block w-full underline-offset-4">Random Color Picker</a></h3>
-              </div>
-              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+              </article>
+              <article class="group rounded-3xl border shadow overflow-hidden max-w-80">
                 <figure class="overflow-hidden"><img src="asset/48Gallery.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/48Gallery/" target="_blank" class="block w-full underline-offset-4">48 Gallery</a></h3>
-              </div>
-              <div class="group rounded-3xl border shadow overflow-hidden max-w-80">
+              </article>
+              <article class="group rounded-3xl border shadow overflow-hidden max-w-80">
                 <figure class="overflow-hidden"><img src="asset/pickUrCar.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300"><a href="https://ellorabyndra.github.io/PickCar/" target="_blank" class="block w-full underline-offset-4">Pick Ur Car!</a></h3>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -260,6 +260,7 @@
                   <label for="message" class="text-secondary has-[:focus]:text-main">Message
                     <textarea autocomplete="off" placeholder="Your Message" id="message" class="w-full h-40 outline-none text-secondary p-2 mt-1 rounded-lg shadow-sm focus:ring-2 focus:ring-main" ></textarea>
                   </label>
+                  <p id="success-message" class="hidden text-main">Your message has been sent!</p>
                 </div>
                 <button class="block mx-auto bg-main text-white px-4 py-3 rounded-2xl active:bg-emerald-600 transition duration-300 md:text-xl">Send Message</button>
               </div>

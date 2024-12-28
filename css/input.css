@@ -28,3 +28,11 @@
 .nav-glass {
   @apply bg-white bg-opacity-40 backdrop-blur-sm shadow;
 }
+
+.error {
+  @apply ring-2 ring-red-500;
+}
+
+.error-message {
+  @apply text-red-500 text-sm mt-1
+}
