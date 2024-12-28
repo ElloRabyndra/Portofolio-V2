@@ -96,3 +96,14 @@ function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(String(email).toLowerCase());
 }
+
+// Dark/Mode Button
+const html = document.querySelector("html");
+const modeButtons = document.querySelectorAll("#mode-button");
+
+modeButtons.forEach((modebutton) => {
+  modebutton.addEventListener("click", () => {
+    modebutton.firstElementChild.classList.toggle("bxs-moon");
+    html.classList.toggle("dark");
+  });
+});

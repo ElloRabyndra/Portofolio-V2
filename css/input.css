@@ -10,7 +10,7 @@
 }
 
 .nav-line {
-  @apply block w-[30px] h-[2px] my-2 bg-secondary;
+  @apply block w-[30px] h-[2px] my-2;
 }
 
 .nav-line-active > span:nth-child(1) {
@@ -26,7 +26,7 @@
 }
 
 .nav-glass {
-  @apply bg-white bg-opacity-40 backdrop-blur-sm shadow;
+  @apply bg-opacity-40 backdrop-blur-sm shadow;
 }
 
 .error {
@@ -34,5 +34,5 @@
 }
 
 .error-message {
-  @apply text-red-500 text-sm mt-1
+  @apply text-red-500 text-sm mt-1;
 }
