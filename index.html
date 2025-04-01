@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
@@ -104,12 +105,12 @@
     <section class="pt-24 pb-16 md:pt-36 dark:bg-slate-900" id="about">
       <div class="container">
         <div class="flex flex-wrap lg:px-20">
-          <div class="w-full px-4 mb-4 md:w-1/2">
+          <div data-aos="fade-up" class="w-full px-4 mb-4 md:w-1/2">
             <h3 class="text-main font-semibold text-xl lg:text-2xl">ABOUT ME</h3>
             <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl dark:text-white">Get to Know Me !</h2>
             <p class="text-secondary text-base mt-2 lg:text-lg dark:text-white">I have experience in Java and JavaScript programming languages and am currently focusing on web development. I excel in teamwork, communication, adaptability, problem-solving, and leadership.</p>
           </div>
-          <div class="w-full px-4 md:w-1/2 lg:px-24 md:py-9">
+          <div data-aos="fade-up" class="w-full px-4 md:w-1/2 lg:px-24 md:py-9">
             <h2 class="text-secondary font-bold text-2xl xl:text-3xl dark:text-white">Connect With Me</h2>
             <div class="flex items-center gap-2 mt-3 text-3xl text-secondary md:gap-3 lg:text-4xl dark:text-white">
               <a href="https://wa.me/6281364324016" target="_blank" class="bx bxl-whatsapp block border-2 rounded-full p-1 hover:bg-main hover:text-white transition duration-300"></a>
@@ -128,13 +129,13 @@
      <section class="pt-24 pb-24 bg-gray-100 shadow-sm dark:bg-slate-800" id="skills">
       <div class="container">
         <div class="w-full px-4">
-          <div class="w-full mx-auto mb-4 text-center text-secondary dark:text-white">
+          <div data-aos="fade-up" class="w-full mx-auto mb-4 text-center text-secondary dark:text-white">
             <h3 class="text-main font-bold text-2xl lg:text-3xl">SKILLS & EXPERIENCE</h3>
             <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl dark:text-white">My Expertise</h2>
             <p class="max-w-screen-sm mx-auto text-secondary text-base mt-2 lg:text-lg dark:text-white">I have solid experience and expertise in web development and graphic design, combining technical proficiency with creative insight to deliver impactful results.</p>
           </div>
           <div class="flex flex-wrap lg:px-20">
-            <div class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4 xl:w-1/2">
+            <div data-aos="fade-right" class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4 xl:w-1/2">
               <div class="w-28 p-4 bg-gray-200 rounded-2xl shadow-sm hover:ring-2 hover:ring-offset-2 hover:ring-main hover:-translate-y-2 transition duration-300 overflow-hidden dark:bg-slate-700">
                 <figure>
                   <img src="asset/html.png" alt="HTML" class="w-full">
@@ -184,7 +185,7 @@
                 <figcaption class="text-center mt-1 text-secondary font-semibold dark:text-white">Figma</figcaption>
               </div>
             </div>
-            <div class="w-full mt-8 space-y-5 xl:w-1/2 xl:px-20">
+            <div data-aos="fade-left" class="w-full mt-8 space-y-5 xl:w-1/2 xl:px-20">
               <div class="w-full cursor-pointer">
                 <h3 class=" bg-main text-white px-4 py-1 rounded-2xl w-max hover:bg-emerald-600 transition duration-300 md:text-xl">Nov 2024 - Aug 2024</h3>
                 <h4 class="text-secondary text-lg font-semibold mt-1 px-1 md:text-xl dark:text-white">Google Developer Student Club Unsri</h4>
@@ -211,13 +212,13 @@
      <section class="pt-24 pb-24 dark:bg-slate-900" id="project">
       <div class="container">
         <div class="w-full px-4">
-          <div class="w-full mx-auto mb-4 text-center text-secondary dark:text-white">
+          <div data-aos="fade-up" class="w-full mx-auto mb-4 text-center text-secondary dark:text-white">
             <h3 class="text-main font-bold text-2xl lg:text-3xl">PROJECT</h3>
             <h2 class="text-secondary font-bold text-2xl mt-2 lg:text-3xl dark:text-white">My Recent Project</h2>
             <p class="max-w-screen-sm mx-auto text-secondary text-base mt-2 lg:text-lg dark:text-white">My projects blend innovative functionality with engaging visuals, bringing creative ideas to life through code and design.</p>
           </div>
           <div class="w-full lg:px-20">
-            <div class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4">
+            <div data-aos="fade-up" class="w-full flex flex-wrap justify-center gap-10 mt-8 mb-4">
               <article class="group rounded-3xl border shadow overflow-hidden max-w-80 dark:border-none dark:shadow-none">
                 <figure class="overflow-hidden"><img src="asset/firstporto.jpg" alt="First Portofolio" class="shadow  group-hover:scale-105 transition duration-300"></figure>
                 <h3 class="p-4 bg-gray-100 text-secondary text-xl text-center font-medium group-hover:bg-main group-hover:text-white transition duration-300 dark:bg-slate-800 dark:text-white"><a href="https://ellorabyndra.github.io/" target="_blank" class="block w-full underline-offset-4">Portofolio Website V1</a></h3>
@@ -308,5 +309,9 @@
      </footer>
     <!-- Footer -->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
